@@ -18,13 +18,13 @@ if (typeof window !== 'undefined') {
   const input = document.getElementById('inputText');
 
   btn.addEventListener('click', () => {
-  const texto = input.value.trim();
-  if (texto !== '') {
-    agregarItem(texto);
-    document.getElementById('mensaje').textContent = 'Elemento agregado ✅';
-    input.value = '';
-  }
-});
-  }
+    const texto = input.value.trim();
+    if (texto !== '') {
+      agregarItem(texto);
+      document.getElementById('mensaje').textContent = 'Elemento agregado ✅';
+      input.value = '';
+    }
+  });
+}
 
-module.exports = { suma, agregarItem };
+module.exports = { suma };
