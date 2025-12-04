@@ -1,0 +1,13 @@
+{
+  "name": "taller-git-ci-3223874-esteban-cardona",
+  "version": "1.0.0",
+  "description": "Taller Git + CI",
+  "scripts": {
+    "test": "node --test",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.8.0"
+  }
+}
