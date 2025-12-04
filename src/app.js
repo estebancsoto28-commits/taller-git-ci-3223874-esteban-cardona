@@ -17,15 +17,14 @@ if (typeof window !== 'undefined') {
   const btn = document.getElementById('btnAgregar');
   const input = document.getElementById('inputText');
 
-  if (btn && input) {
-    btn.addEventListener('click', () => {
-      const texto = input.value.trim();
-      if (texto !== '') {
-        agregarItem(texto);
-        input.value = '';
-      }
-    });
-  }
+  btn.addEventListener('click', () => {
+    const texto = input.value.trim();
+    if (texto !== '') {
+      agregarItem(texto);
+      document.getElementById('mensaje').textContent = 'Elemento agregado ✅';
+      input.value = '';
+    }
+  });
 }
 
-module.exports = { suma, agregarItem };
+module.exports = { suma };
